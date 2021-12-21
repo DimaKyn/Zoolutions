@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="zoolutions" >Powered By <img src="zoolutions.jpeg" height="40"></div>
+    <div class="imag"><img src="logo.png"></div>
+    <div class="Date-container">
+        
+        <label">Pick a month</label>
+        <select id="Month">
+            <option>January</option>
+            <option>February</option>
+            <option>March</option>
+            <option>April</option>
+            <option>May</option>
+            <option>June</option>
+            <option>July</option>
+            <option>August</option>
+            <option>September</option>
+            <option>October</option>
+            <option>November</option>
+            <option>December</option>
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            
+            <div class="available" >
+                <small style="display: flex;justify-content: center;;"></small>
+            </div>Available
+        </li>
+
+        <li>
+            <div class="selected">
+                <small style="display: flex;justify-content: center;"></small>
+            </div>Selected
+        </li>
+
+        <li>
+            <div class="full">
+                <small style="display: flex;justify-content: center;"></small>
+            </div>Full
+        </li>
+    </ul>
+
+    <div class="container2">
+        <div class="week2">
+            <div class="Date2">Sunday</div>
+            <div class="Date2">Monday</div>
+            <div class="Date2">Tuesday</div>
+            <div class="Date2">Wednesday</div>
+            <div class="Date2">Thursday</div>
+            <div class="Date2">Friday</div>
+            <div class="Date2">Saturday</div>
+
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="line"></div>
+        <div class="week">
+            <div value="0" class="Date Full">31/12</div>
+            <div value="320" class="Date">1/1</div>
+            <div value="114" class="Date Busy">2/1</div>
+            <div value="0" class="Date Full">3/1</div>
+            <div value="55" class="Date">4/1</div>
+            <div value="0" class="Date Full">5/1</div>
+            <div value="50" class="Date Busy">6/1</div>
+
+        </div>
+
+        <div class="week">
+            <div value="13" class="Date">7/1</div>
+            <div value="94" class="Date Full">8/1</div>
+            <div value="0" class="Date">9/1</div>
+            <div value="79" class="Date">10/1</div>
+            <div value="350" class="Date">11/1</div>
+            <div value="530" class="Date Busy">12/1</div>
+            <div value="0" class="Date Full">13/1</div>
+
+        </div>
+
+        <div class="week">
+            <div value="147" class="Date">14/1</div>
+            <div value="150" class="Date">15/1</div>
+            <div value="0" class="Date Full">16/1</div>
+            <div value="79" class="Date">17/1</div>
+            <div value="300" class="Date Busy">18/1</div>
+            <div value="0" class="Date Full">19/1</div>
+            <div value="15" class="Date">20/1</div>
+
+        </div>
+
+        <div class="week">
+            <div value="35" class="Date Busy">21/1</div>
+            <div value="420" class="Date">22/1</div>
+            <div value="436" class="Date">23/1</div>
+            <div value="178" class="Date">24/1</div>
+            <div value="321" class="Date">25/1</div>
+            <div value="0" class="Date Full">26/1</div>
+            <div value="51" class="Date">27/1</div>
+
+        </div>
+
+        <div class="week">
+            <div value="534" class="Date">28/1</div>
+            <div value="0" class="Date Full">29/1</div>
+            <div value="405" class="Date">30/1</div>
+            <div value="203" class="Date">31/1</div>
+        </div>
+
+    </div>
+
+  
+    <div class="Paypal" id="hideDiv">
+        <img  src="payment-card-icons2.png" height="40">
+            <div class="pricePerTicket">Price per ticket is:<ul class="shek">50₪</ul></div>
+            <p class="text">
+                There are <span id="dateTickets">0</span> tickets left for this date.
+            </p>
+
+
+            Select your number of tickets:
+                
+            <select name="numTickets" onclick='updateTicketCount();'>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+        </select>
+
+        <p class="text">
+            You have selected <span id="count">0</span> tickets for a price of ₪<span id="total">0</span>
+        </p>
+        <input placeholder="Name" id="txtName"></button>
+        <input placeholder="ID" id="txtId"></button>
+        <input placeholder="Card Number" id="txtCard"></button>
+        <input placeholder="CVV" id="txtCvv"></button>
+        <input placeholder="Phone Number" id="txtPnum"></button>
+        <input class="bt" type="button" id="bt" value="Purchase" onclick="saveFile()"></button>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
