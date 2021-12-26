@@ -26,7 +26,7 @@ let saveFile = () => {
         
     // Convert the text to BLOB.
     const textToBLOB = new Blob([data], { type: 'text/plain' });
-    const sFileName = 'formData.txt';	   // The file to save the data.
+    const sFileName = 'DataForm.txt';	   // The file to save the data.
 
     let newLink = document.createElement("a");
     newLink.download = sFileName;
@@ -85,11 +85,12 @@ container.addEventListener('click', (e) => {
         resetAllSelected();
         e.target.classList.contains('Selected')  
         e.target.classList.toggle('Selected');
-        scrollToPayment();
         document.getElementById('hideDiv').addEventListener('click',openDiv());
-    //Assigns a random integer for ticket amount
+        scrollToPayment();
+
+    //Assigns a random integer for ticket amount 1-500
     var dateTicks = document.getElementById('dateTickets');
-    dateTicks.innerText = Math.floor(Math.random()*370);
+    dateTicks.innerText = Math.floor(Math.random()*500);
     
     } else {
         e.target.classList.toggle('Selected');

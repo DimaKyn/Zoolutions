@@ -17,7 +17,7 @@ body {
     right:0;
     width:100%;
     color:#fff;
-    background: linear-gradient(-45deg,#4b462a,#13312d ,#244b49);
+    background: linear-gradient(-45deg,#36321c,#182e2b ,#12aca4);
     background-size: 400% 400%;
     position:relative;
     animation: change 20s ease-in-out infinite;
@@ -32,7 +32,6 @@ body {
 
 .zoolutions {
     position:initial;
-
     left:0;
     right:0;
     font-family: 'Garamond', 'sans-serif';
