@@ -5,14 +5,14 @@ const weekSelect = document.getElementById('Month');
 const elementToFocus= document.querySelector('#bt');
 
 let saveFile = () => {
-
+    //5 input boxes for the customers information
     const Name = document.getElementById('txtName');
     const id = document.getElementById('txtId');
     const cardNumber= document.getElementById('txtCard');
     const cvv = document.getElementById('txtCvv');
     const phoneNum = document.getElementById('txtPnum');
 
-    //Get number of tickets
+    //Get number of tickets from 0 to 10
     var s = document.getElementsByName('numTickets')[0];
     var text = s.options[s.selectedIndex].text;
 
@@ -82,9 +82,11 @@ document.getElementById('hideDiv').style.display="none";
 container.addEventListener('click', (e) => {
     
     if (e.target.classList.contains('Date') && !e.target.classList.contains('Full')) {
+        //If a date is already picked , deselect it and select the currently selected date
         resetAllSelected();
         e.target.classList.contains('Selected')  
         e.target.classList.toggle('Selected');
+        //Makes the payment box appear on first date click
         document.getElementById('hideDiv').addEventListener('click',openDiv());
         scrollToPayment();
 

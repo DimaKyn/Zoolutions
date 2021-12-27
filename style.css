@@ -17,10 +17,10 @@ body {
     right:0;
     width:100%;
     color:#fff;
-    background: linear-gradient(-45deg,#36321c,#182e2b ,#12aca4);
+    background: linear-gradient(-45deg,#38320d,#182e2b ,#0d773d );
     background-size: 400% 400%;
     position:relative;
-    animation: change 20s ease-in-out infinite;
+    animation: change 25s infinite;
 
     display:flex;
     flex-direction: column;
@@ -28,20 +28,6 @@ body {
     align-items: center;
     justify-content: center;
     font-family: 'Lato', 'sans-serif';
-}
-
-.zoolutions {
-    position:initial;
-    left:0;
-    right:0;
-    font-family: 'Garamond', 'sans-serif';
-    background-color: rgb(255, 254, 241);
-    color:black;
-
-    width:110%;
-    display:flex;
-    align-items:center;
-    justify-content: center;
 }
 
 @keyframes change {
@@ -55,6 +41,21 @@ body {
         background-position: 0 50%;
     }
 }
+
+.zoolutions {
+    position:initial;
+    left:0;
+    right:0;
+    font-family: 'Harabara Mais', 'sans-serif';
+    background-color: rgb(255, 254, 241);
+    color:black;
+
+    width:110%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
 
 .Date {
     background-color: #ffffff;
